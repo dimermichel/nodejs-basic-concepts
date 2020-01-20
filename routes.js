@@ -1,10 +1,10 @@
-const fs = require('fs')
+const fs = require('fs');
 
 const requestHandler = (req, res) => {
     //console.log(req.url, req.method, req.headers);
     const url = req.url;
     const method = req.method;
-    if (url === '/'){
+    if (url === '/') {
         res.setHeader('Content-Type', 'text/html');
         res.write(`<!DOCTYPE html>
         <html lang="en">
